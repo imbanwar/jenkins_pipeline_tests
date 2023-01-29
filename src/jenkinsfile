@@ -12,7 +12,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        bat 'python parameter_add.py'
+        bat 'src/python parameter_add.py'
       }
     }
   }

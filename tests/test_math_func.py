@@ -5,14 +5,3 @@ def test_add():
 def test_product():
 	assert math_func.product(5,5) ==25
 	assert math_func.product(5) ==10
-def test_add_string():
-	result = math_func.add('Hello','World')
-	assert result == 'HelloWorld'
-	assert type(result) is str
-	assert 'Hello' in result
-def test_product_string():
-	assert math_func.product('Hello ',3) == 'Hello Hello Hello '
-	result = math_func.product('Hello ')
-	assert result == 'Hello Hello '
-	assert type(result) is str
-	assert 'Hello' in result

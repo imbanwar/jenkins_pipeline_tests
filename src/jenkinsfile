@@ -19,4 +19,6 @@ pipeline {
         bat 'python tests/test_math_func.py'    
     }
     }
-  }
+ }
+ }
+}

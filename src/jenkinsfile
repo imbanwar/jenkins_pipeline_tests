@@ -10,6 +10,7 @@ pipeline {
         bat 'python --version'
       }
     }
+	}
     stage('Build') {
       steps {
         bat 'python src/math_func.py'
@@ -21,4 +22,3 @@ pipeline {
     }
  }
  }
-}

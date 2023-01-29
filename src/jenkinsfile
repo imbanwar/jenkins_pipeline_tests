@@ -5,15 +5,19 @@ pipeline {
     string defaultValue: "200", description: "choose your value2", name: "value2"
     }
   stages {
-    stage('version') {
+    stage('checkout') {
       steps {
         bat 'python --version'
       }
     }
-    stage('hello') {
+    stage('Build') {
       steps {
-        bat 'python src/parameter_add.py'
+        bat 'python src/math_func.py'
       }
+	stage('Test') {
+    steps {
+        bat 'python tests/test_math_func.py'    
+    }
     }
   }
 }

@@ -10,15 +10,15 @@ pipeline {
         bat 'python --version'
       }
     }
-	}
-	stage('Build'){
+    stage('Build') {
       steps {
         bat 'python src/math_func.py'
       }
-	stage('Test'){
-		steps {
-			bat 'python tests/test_math_func.py'    
-		}
     }
- }
- }
+	stage('Test') {
+      steps {
+        bat 'python tests/test_math_func.py'
+      }
+    }
+  }
+}

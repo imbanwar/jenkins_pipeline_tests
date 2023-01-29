@@ -1,5 +1,5 @@
 import os
-import src.math_func
+import math_func
 def test_add():
     assert math_func.add(value1,value2) == 10
     assert math_func.add(value1) ==9

@@ -7,7 +7,7 @@ def product(x, y=2):
     print(x * y)
     print("addition completed")
     return x * y
-input1 = os.getenv("value1")
-input2 = os.getenv("value2")
+input1 = int(os.getenv("value1"))
+input2 = int(os.getenv("value2"))
 add(input1, input2)
 product(input1, input2)

@@ -1,7 +1,7 @@
 import os
 import sys
-import math_func
 sys.path.append(r'C:\Users\Lenovo\OneDrive\Desktop\jenkins_pipeline_tests\src')
+import math_func
 #SET PYTHONPATH=C:\Users\Lenovo\OneDrive\Desktop\jenkins_pipeline_tests\src
 
 def test_add():

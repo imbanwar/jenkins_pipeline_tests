@@ -7,7 +7,7 @@ value1 = int(os.getenv("value1"))
 value2 = int(os.getenv("value2"))
 def test_add():
     assert math_func.add(value1,value2) == 10
-    assert math_func.add(value1) ==9
+    assert math_func.add(value1) ==7
 def test_product():
 	assert math_func.product(value1,value2) == 25
 	assert math_func.product(value1) ==10

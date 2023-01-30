@@ -10,6 +10,6 @@ def test_add():
 def test_product():
 	assert math_func.product(value1,value2) == 25
 	assert math_func.product(value1) ==10
-value1 = os.getenv("value1")
-value2 = os.getenv("value2")
+value1 = int(os.getenv("value1"))
+value2 = int(os.getenv("value2"))
 #print(sys.path)
